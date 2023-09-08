@@ -1,0 +1,29 @@
+section {
+    background-color: #1abc9c;
+    margin-top: 100px;
+    padding-block: 142px;
+  }
+  .icon {
+    position: relative;
+    width: fit-content;
+  }
+  .icon::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 30px;
+    width: 90px;
+    height: 4px;
+    background-color: #fff;
+  }
+  .icon::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    right: 30px;
+    width: 90px;
+    height: 4px;
+    background-color: #fff;
+  }
+
+  

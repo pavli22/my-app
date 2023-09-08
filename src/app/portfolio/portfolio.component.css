@@ -1,0 +1,54 @@
+section {
+  background-color: white;
+  margin-top: 100px;
+}
+h1 {
+  font-weight: bold;
+  color: #2c3e50;
+}
+.col-lg-4 .content {
+  cursor: pointer;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  background-color: #3cc5aa;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.col-lg-4 .content:hover .layer {
+  opacity: 0.9;
+}
+
+.icon {
+  position: relative;
+  width: fit-content;
+}
+.icon::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 30px;
+  width: 90px;
+  height: 4px;
+  background-color: #2c3e50;
+}
+.icon::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  right: 30px;
+  width: 90px;
+  height: 4px;
+  background-color: #2c3e50;
+}
+.target-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999999999999;
+}

@@ -1,0 +1,85 @@
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center justify-content-center g-5">
+      <div class="col-12">
+        <div
+          class="content d-flex flex-column align-items-center justify-content-center"
+        >
+          <h1 class="fw-bold">CONTACT SECTION</h1>
+          <div class="icon">
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <form class="form">
+          <label
+            [style]="
+              !isEmpty[0]
+                ? 'transform: translateY(0)'
+                : 'transform: translateY(40px)'
+            "
+            for="userName"
+            >userName:</label
+          >
+          <input
+            (keyup)="showLabel($event)"
+            id="userName"
+            type="text"
+            class="form-control my-1 border-2 border-bottom"
+            placeholder="userName"
+          />
+          <label
+            [style]="
+              !isEmpty[1]
+                ? 'transform: translateY(0)'
+                : 'transform: translateY(40px)'
+            "
+            for="userAge"
+            >userAge:</label
+          >
+          <input
+            (keyup)="showLabel($event)"
+            id="userAge"
+            type="text"
+            class="form-control border-2 border-bottom my-1"
+            placeholder="userAge"
+          />
+          <label
+            [style]="
+              !isEmpty[2]
+                ? 'transform: translateY(0)'
+                : 'transform: translateY(40px)'
+            "
+            for="userEmail"
+            >userEmail:</label
+          >
+          <input
+            (keyup)="showLabel($event)"
+            id="userEmail"
+            type="email"
+            class="form-control border-2 border-bottom my-1"
+            placeholder="userEmail"
+          />
+          <label
+            [style]="
+              !isEmpty[3]
+                ? 'transform: translateY(0)'
+                : 'transform: translateY(40px)'
+            "
+            for="userPass"
+            >userPass:</label
+          >
+          <input
+            (keyup)="showLabel($event)"
+            id="userPass"
+            type="password"
+            class="form-control border-2 border-bottom my-1"
+            placeholder="userPass"
+          />
+          <button class="btn btn-success mt-4">send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
